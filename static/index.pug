@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    link(href='https://fonts.googleapis.com/css?family=Salsa', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Poiret One', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Redressed', rel='stylesheet', type='text/css')
+    link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+    style
+      include style.css
+    title ShortURL
+  body
+    h1 URL Shortener Microservice
+    h3 An API Project for FreeCodeCamp
+    div
+      p This Microservice accepts an URL as a parameter and will return a shortened URL in the JSON response. 
+      p Visiting the shortened URL will redirect you to the original URL.
+      p 
+        strong EXAMPLE:
+      p#example 
+        a#link(href=url target="_blank") #{url}
+      p 
+        strong OUTPUT:
+      p#example {"original_url": 
+        a#link(href=original target="_blank") #{original}, 
+        |"short_url": 
+        a#link(href=original target="_blank") #{short}}
+include foot.pug

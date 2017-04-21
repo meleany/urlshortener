@@ -1,0 +1,48 @@
+body{
+  background-color:rgba(254,228,152, 0.7); //rgba(237,219,205,0.5); pink tone
+}
+
+h1{
+  font-family: Salsa;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h3{
+  font-family: Salsa;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+div{
+  font-family: Poiret One;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+a{
+  color: white;
+} 
+
+#link{
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#example{
+  color: red;
+  font-weight: bold;
+}
+
+#footer{
+  font-family: Redressed;
+  font-size: 20px;
+  text-align: center;
+  color:white;
+  text-shadow: 5px 2px 5px black;
+  background-color:rgb(55,55,55);
+  padding: 10px;  
+}
