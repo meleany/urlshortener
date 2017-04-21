@@ -8,11 +8,9 @@ var app = express();
 var PORT = process.env.PORT || 3000;
 
 // Initializing variables for main page and mongodb.
-var short;
-//var original = "https://www.google.com";
-var mongoUrl = "mongodb://localhost:27017/urlshortener";
+var mongoUrl = process.env.MONGODB_URI;
 var example = {url: "https://www.google.com", short: "3xAmP13"};
-var hostname, original, url, shorturl;
+var hostname, original, url, short, shorturl;
 var collection;
 
 // Starting MongoDB connection to database, this is the only dependency driver. 
